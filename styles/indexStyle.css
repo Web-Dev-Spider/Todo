@@ -1,4 +1,12 @@
+body {
+  height: 100vh;
+}
+
 form {
   max-width: 450px;
   width: 100%;
+}
+.add-btn {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
