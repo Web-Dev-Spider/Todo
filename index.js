@@ -67,14 +67,29 @@ signupForm.addEventListener("submit", (event) => {
   event.preventDefault();
   isValid = true;
   validateName();
-  console.log(isValid);
   validateEmail();
-  console.log(isValid);
   validatePassword();
-
-  console.log("value of is valid", isValid);
   if (isValid) {
     console.log("Submitting form");
-    form.submit();
+    signupForm.submit();
   }
+});
+let showHideStatus = true;
+const showHideEl = document.getElementById("showHideIcon");
+showHideEl.addEventListener("click", () => {
+  showHideStatus = !showHideStatus;
+  showHideEl.innerHTML = showHideStatus
+    ? '<i class="bi bi-eye-slash form-label"></i>'
+    : '<i class="bi bi-eye form-label"></i>';
+  passwordEl.type = showHideStatus ? "password" : "text";
+});
+const showHideConfirmPassEl = document.getElementById(
+  "showHideIconConfirmPass"
+);
+showHideConfirmPassEl.addEventListener("click", () => {
+  showHideStatus = !showHideStatus;
+  showHideConfirmPassEl.innerHTML = showHideStatus
+    ? '<i class="bi bi-eye-slash form-label"></i>'
+    : '<i class="bi bi-eye form-label"></i>';
+  confirmPassEl.type = showHideStatus ? "password" : "text";
 });

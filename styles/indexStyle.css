@@ -16,3 +16,62 @@ form {
   color: red;
   font-size: smaller;
 }
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.pass-container {
+  width: 100%;
+  padding-right: 30%;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
+
+.list-group-item {
+  display: flex;
+  /* position: relative; */
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  list-style: none;
+  border-radius: 5px;
+  justify-content: space-between;
+  border: 1px solid rgb(215, 214, 214);
+  font-size: large;
+  /* align-items: center; */
+}
+
+.list-group-item:hover {
+  background-color: rgb(216, 236, 224);
+}
+
+#task-list {
+  max-width: 750px;
+  /* min-width: 650px; */
+  margin: 0 auto;
+}
+#task-list span {
+  flex-grow: 1;
+}
+
+#task-list i {
+  margin-left: 5px;
+}
+#task-list i:hover {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+#span {
+  display: block;
+}
