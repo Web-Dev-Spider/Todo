@@ -22,10 +22,22 @@
       >
         <h3 class="text-center display-6">Login</h3>
         <label for="username" class="form-label">Email</label>
-        <input type="email" class="form-control mb-3" id="username" />
+        <input
+          type="email"
+          class="form-control"
+          id="username"
+          autocomplete="username"
+        />
+        <span class="text-danger fs-6 mb-3" id="emailErrMsg"></span>
 
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control mb-4" id="password" />
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          autocomplete="current-password"
+        />
+        <span class="text-danger fs-6 mb-3" id="passErrMsg"></span>
 
         <button type="submit" class="btn btn-primary">Login</button>
       </form>
