@@ -14,31 +14,48 @@
   </head>
   <body class="bg-success d-flex justify-content-center">
     <div class="container-fluid d-flex justify-content-center bg-success">
-      <form action="todo.html" class="bg-white my-5 p-5 rounded-2">
+      <form
+        action="/todo.html"
+        id="signupForm"
+        class="bg-white my-auto p-5 rounded-2"
+      >
         <h2 class="text-center text-decoration-underline">Signup</h2>
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" />
-          <p class="errorMsg"></p>
+          <p class="errorMsg" id="errName"></p>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" />
-          <p class="errorMsg"></p>
+          <p class="errorMsg" id="errEmail"></p>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" id="password" class="form-control" />
-          <p class="errorMsg"></p>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            autocomplete="new-password"
+          />
+          <p class="errorMsg" id="errPassword"></p>
         </div>
         <div class="mb-3">
-          <label for="confirmPassword" class="form-label"
-            >Confirm Password</label
-          >
-          <input type="password" id="confirmPassword" class="form-control" />
-          <p class="errorMsg"></p>
+          <label for="confirmPass" class="form-label">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPass"
+            class="form-control"
+            autocomplete="new-password"
+          />
+          <p class="errorMsg" id="errConfirmPass"></p>
         </div>
-        <button type="submit" class="form-control bg-primary text-white my-1">
+        <!-- <input
+          type="button"
+          value="Signup"
+          class="form-control bg-primary text-white"
+        /> -->
+        <button class="btn btn-primary form-control" type="submit">
           Submit
         </button>
         <p class="text-center">Already have an account? <a href="">Login</a></p>
@@ -50,5 +67,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
